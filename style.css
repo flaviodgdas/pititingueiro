@@ -54,18 +54,28 @@ footer {
     margin-top: 2rem;
 }
 /*desenhos*/
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 90%;
-    margin: auto;
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.card-container:hover :not(:hover) {
-    opacity: 0.3;
+.galeria img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
+
+.galeria img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
 
 img {
     width: 300px;
